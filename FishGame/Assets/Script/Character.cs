@@ -6,14 +6,14 @@ using UnityEngine.AI;
 public class Character : MonoBehaviour
 {
     NavMeshAgent navMeshAgent;
-    [SerializeField]Transform destination;
+  //  [SerializeField]Transform destination;
 
     private void Start()
     {
 
         navMeshAgent = GetComponent<NavMeshAgent>();
 
-        MoveTo(destination.position);
+       
 
 
     }
