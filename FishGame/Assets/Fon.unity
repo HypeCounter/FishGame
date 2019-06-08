@@ -107,7 +107,7 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 45
+    agentSlope: 19
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -119,7 +119,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: b54bc9b2696340a46a713cc9ebae8273, type: 2}
 --- !u!1 &67573091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,7 +1054,7 @@ Terrain:
   m_SplatMapDistance: 1000
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 0
-  m_DrawHeightmap: 1
+  m_DrawHeightmap: 0
   m_DrawInstanced: 0
   m_DrawTreesAndFoliage: 1
   m_ReflectionProbeUsage: 0
@@ -2453,7 +2453,7 @@ PrefabInstance:
     - target: {fileID: 8566768559827862896, guid: 504ab331184f0644da0e6910f3cc0ae5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12
+      value: -99
       objectReference: {fileID: 0}
     - target: {fileID: 8566768559827862896, guid: 504ab331184f0644da0e6910f3cc0ae5,
         type: 3}
@@ -2463,7 +2463,7 @@ PrefabInstance:
     - target: {fileID: 8566768559827862896, guid: 504ab331184f0644da0e6910f3cc0ae5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 22
+      value: -52
       objectReference: {fileID: 0}
     - target: {fileID: 8566768559827862896, guid: 504ab331184f0644da0e6910f3cc0ae5,
         type: 3}
@@ -2528,7 +2528,12 @@ PrefabInstance:
     - target: {fileID: 8816967028175639031, guid: 504ab331184f0644da0e6910f3cc0ae5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.62
+      value: 43.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816967028175639031, guid: 504ab331184f0644da0e6910f3cc0ae5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 44.9
       objectReference: {fileID: 0}
     - target: {fileID: 234198991005290763, guid: 504ab331184f0644da0e6910f3cc0ae5,
         type: 3}
@@ -2595,6 +2600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 843cc693a8a1c0042943b0cd49b61299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destination: {fileID: 3547388057389724391}
 --- !u!195 &3547388057389724390
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2605,7 +2611,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 5.06194
-  m_Speed: 3.5
+  m_Speed: 15
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -2617,3 +2623,9 @@ NavMeshAgent:
   m_BaseOffset: 2.21962
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!4 &3547388057389724391 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8816967028175639031, guid: 504ab331184f0644da0e6910f3cc0ae5,
+    type: 3}
+  m_PrefabInstance: {fileID: 3547388057389724385}
+  m_PrefabAsset: {fileID: 0}

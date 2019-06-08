@@ -1,18 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Character : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    NavMeshAgent navMeshAgent;
+    [SerializeField]Transform destination;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
+
+        navMeshAgent = GetComponent<NavMeshAgent>();
+
+        MoveTo(destination.position);
+
+
+    }
+    public void MoveTo(Vector3 destination)
+    {
+        GetComponent<NavMeshAgent>().destination = destination;
         
     }
 }
