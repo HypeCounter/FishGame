@@ -20,6 +20,6 @@ public class ControlePersonagem : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
             print("Apertou W");
         if (Input.GetKey(KeyCode.S))
-            print("Apertou S")
+            print("Apertou S");
     }
 }
