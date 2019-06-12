@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ControlePersonagem : MonoBehaviour
 {
+    [SerializeField] float turnSpeed = 100;
+    [SerializeField] float pullSpeed = 10;
+    [SerializeField] float pushSpeed = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,12 +17,19 @@ public class ControlePersonagem : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.A))
-            print("Apertou A");
+        { 
+            print("Gira para cima");
+            transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
+        }
         if (Input.GetKey(KeyCode.D))
-            print("Apertou D");
-        if (Input.GetKey(KeyCode.W))
-            print("Apertou W");
-        if (Input.GetKey(KeyCode.S))
-            print("Apertou S");
+        {
+            transform.Rotate(Vector3.down, turnSpeed * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.Space)) { 
+            print("Lanca o anzol");
+        }
+        if (Input.GetKey(KeyCode.LeftControl)) { 
+            print("Puxa o anzol");
+        }
     }
 }
