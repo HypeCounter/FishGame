@@ -675,6 +675,7 @@
     <Compile Include="Assets\Level_Design\Water\Scripts\Water.cs" />
     <Compile Include="Assets\Level_Design\Water\Scripts\WaterBase.cs" />
     <Compile Include="Assets\Level_Design\Water\Scripts\WaterTile.cs" />
+    <Compile Include="Assets\Script\BaitController.cs" />
     <Compile Include="Assets\Script\Character.cs" />
     <Compile Include="Assets\Script\ControlePersonagem.cs" />
     <Compile Include="Assets\Script\IAPeixe.cs" />
