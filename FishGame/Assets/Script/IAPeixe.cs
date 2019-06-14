@@ -33,14 +33,14 @@ public class IAPeixe : MonoBehaviour
         state = State.patrolling;
 
 
-        while (true)
-        {
+      //  while (true)
+      //  {
             Vector3 nextWayPointPos = patrolPath.transform.GetChild(nextWayPointIndex).position;
             character.MoveTo(nextWayPointPos);
           //  Debug.Log(nextWayPointIndex);
             CycleWaypointWhenClose(nextWayPointPos);
             yield return new WaitForSeconds(wayPointDwell);
-        }
+      //  }
         
     }
     private void CycleWaypointWhenClose(Vector3 nextWayPointPos)
@@ -50,7 +50,7 @@ public class IAPeixe : MonoBehaviour
 
         if (Vector3.Distance(transform.position, nextWayPointPos) <= waypointTolerence)
         {
-            Debug.Log("Entrou no if");
+
             nextWayPointIndex = (nextWayPointIndex + 1) % patrolPath.transform.childCount;
             Debug.Log(nextWayPointIndex);
             new WaitForSeconds(1f);
